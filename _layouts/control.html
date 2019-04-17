@@ -32,7 +32,7 @@ layout: default
           
           {% if page.Parameters.size > 0 %}
           <div class="card">
-              <h5 class="card-header">Parameters</h5>
+              <h5 class="card-header">FedRAMP</h5>
               <div class="card-body">
           <ul>
             {% for x in page.Parameters %}
@@ -57,6 +57,20 @@ layout: default
 
           {% endif %}
 
+          {% if page.IaseGuidance %}
+          {% if page.IaseGuidance != empty %}
+          <div class="card">
+              <h5 class="card-header">DISA Cloud Computing SRG</h5>
+              <div class="card-body">
+
+          <p class="card-text">{{ page.IaseGuidance | newline_to_br }}</p>
+        </div>
+      </div>
+      
+          {% endif %}
+          {% endif %}
+
+
           {% if page.SupplementalGuidance != empty %}
           <div class="card">
               <h5 class="card-header">Supplemental Guidance</h5>
@@ -67,20 +81,6 @@ layout: default
       </div>
       
           {% endif %}
-
-          {% if page.IaseGuidance %}
-          {% if page.IaseGuidance != empty %}
-          <div class="card">
-              <h5 class="card-header">IASE Guidance</h5>
-              <div class="card-body">
-
-          <p class="card-text">{{ page.IaseGuidance | newline_to_br }}</p>
-        </div>
-      </div>
-      
-          {% endif %}
-          {% endif %}
-
 
           {% if page.FedrampGuidance != empty %}
           <div class="card">
