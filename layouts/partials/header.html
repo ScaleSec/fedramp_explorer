@@ -1,0 +1,18 @@
+<header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl"><a href="/">FedRAMP Control Explorer</a></h1>
+    <div class="relative">
+        <input type="text" id="search-input" placeholder="Search controls..." class="bg-gray-700 text-white rounded-md p-2">
+        <ul id="search-results" class="absolute w-full z-10"></ul>
+    </div>
+    <nav>
+        <div class="flex space-x-4 items-center">
+            <span>Baseline: </span>
+            <select id="baseline-selector" onchange="location = this.value;" class="bg-gray-700 text-white rounded-md p-2">
+                <option value="/high/" {{ if eq .Section "high" }}selected{{ end }}>High</option>
+                <option value="/moderate/" {{ if eq .Section "moderate" }}selected{{ end }}>Moderate</option>
+                <option value="/low/" {{ if eq .Section "low" }}selected{{ end }}>Low</option>
+                <option value="/li-saas/" {{ if eq .Section "li-saas" }}selected{{ end }}>LI-SaaS</option>
+            </select>
+        </div>
+    </nav>
+</header>

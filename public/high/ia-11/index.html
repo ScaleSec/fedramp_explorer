@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-authentication | FedRAMP Explorer</title>
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/main.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl"><a href="/">FedRAMP Control Explorer</a></h1>
+    <div class="relative">
+        <input type="text" id="search-input" placeholder="Search controls..." class="bg-gray-700 text-white rounded-md p-2">
+        <ul id="search-results" class="absolute w-full z-10"></ul>
+    </div>
+    <nav>
+        <div class="flex space-x-4 items-center">
+            <span>Baseline: </span>
+            <select id="baseline-selector" onchange="location = this.value;" class="bg-gray-700 text-white rounded-md p-2">
+                <option value="/high/" selected>High</option>
+                <option value="/moderate/" >Moderate</option>
+                <option value="/low/" >Low</option>
+                <option value="/li-saas/" >LI-SaaS</option>
+            </select>
+        </div>
+    </nav>
+</header>
+
+    <div id="container" class="flex">
+        <div id="sidebar" class="w-1/4 bg-white h-screen p-4 overflow-y-auto">
+            <h2 class="text-lg font-bold mb-4">Controls</h2>
+<div id="control-family-accordion">
+    
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    
+
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="access-control">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Access Control</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="access-control">
+                
+                    <li><a href="/high/ac-1/">AC-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/ac-2/">AC-2 - Account Management</a></li>
+                
+                    <li><a href="/high/ac-3/">AC-3 - Access Enforcement</a></li>
+                
+                    <li><a href="/high/ac-4/">AC-4 - Information Flow Enforcement</a></li>
+                
+                    <li><a href="/high/ac-5/">AC-5 - Separation of Duties</a></li>
+                
+                    <li><a href="/high/ac-6/">AC-6 - Least Privilege</a></li>
+                
+                    <li><a href="/high/ac-7/">AC-7 - Unsuccessful Logon Attempts</a></li>
+                
+                    <li><a href="/high/ac-8/">AC-8 - System Use Notification</a></li>
+                
+                    <li><a href="/high/ac-10/">AC-10 - Concurrent Session Control</a></li>
+                
+                    <li><a href="/high/ac-11/">AC-11 - Device Lock</a></li>
+                
+                    <li><a href="/high/ac-12/">AC-12 - Session Termination</a></li>
+                
+                    <li><a href="/high/ac-14/">AC-14 - Permitted Actions Without Identification or Authentication</a></li>
+                
+                    <li><a href="/high/ac-17/">AC-17 - Remote Access</a></li>
+                
+                    <li><a href="/high/ac-18/">AC-18 - Wireless Access</a></li>
+                
+                    <li><a href="/high/ac-19/">AC-19 - Access Control for Mobile Devices</a></li>
+                
+                    <li><a href="/high/ac-20/">AC-20 - Use of External Systems</a></li>
+                
+                    <li><a href="/high/ac-21/">AC-21 - Information Sharing</a></li>
+                
+                    <li><a href="/high/ac-22/">AC-22 - Publicly Accessible Content</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="assessment-authorization-and-monitoring">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Assessment, Authorization, and Monitoring</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="assessment-authorization-and-monitoring">
+                
+                    <li><a href="/high/ca-1/">CA-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/ca-2/">CA-2 - Control Assessments</a></li>
+                
+                    <li><a href="/high/ca-3/">CA-3 - Information Exchange</a></li>
+                
+                    <li><a href="/high/ca-5/">CA-5 - Plan of Action and Milestones</a></li>
+                
+                    <li><a href="/high/ca-6/">CA-6 - Authorization</a></li>
+                
+                    <li><a href="/high/ca-7/">CA-7 - Continuous Monitoring</a></li>
+                
+                    <li><a href="/high/ca-8/">CA-8 - Penetration Testing</a></li>
+                
+                    <li><a href="/high/ca-9/">CA-9 - Internal System Connections</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="audit-and-accountability">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Audit and Accountability</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="audit-and-accountability">
+                
+                    <li><a href="/high/au-1/">AU-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/au-2/">AU-2 - Event Logging</a></li>
+                
+                    <li><a href="/high/au-3/">AU-3 - Content of Audit Records</a></li>
+                
+                    <li><a href="/high/au-4/">AU-4 - Audit Log Storage Capacity</a></li>
+                
+                    <li><a href="/high/au-5/">AU-5 - Response to Audit Logging Process Failures</a></li>
+                
+                    <li><a href="/high/au-6/">AU-6 - Audit Record Review, Analysis, and Reporting</a></li>
+                
+                    <li><a href="/high/au-7/">AU-7 - Audit Record Reduction and Report Generation</a></li>
+                
+                    <li><a href="/high/au-8/">AU-8 - Time Stamps</a></li>
+                
+                    <li><a href="/high/au-9/">AU-9 - Protection of Audit Information</a></li>
+                
+                    <li><a href="/high/au-10/">AU-10 - Non-repudiation</a></li>
+                
+                    <li><a href="/high/au-11/">AU-11 - Audit Record Retention</a></li>
+                
+                    <li><a href="/high/au-12/">AU-12 - Audit Record Generation</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="awareness-and-training">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Awareness and Training</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="awareness-and-training">
+                
+                    <li><a href="/high/at-1/">AT-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/at-2/">AT-2 - Literacy Training and Awareness</a></li>
+                
+                    <li><a href="/high/at-3/">AT-3 - Role-based Training</a></li>
+                
+                    <li><a href="/high/at-4/">AT-4 - Training Records</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="configuration-management">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Configuration Management</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="configuration-management">
+                
+                    <li><a href="/high/cm-1/">CM-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/cm-2/">CM-2 - Baseline Configuration</a></li>
+                
+                    <li><a href="/high/cm-3/">CM-3 - Configuration Change Control</a></li>
+                
+                    <li><a href="/high/cm-4/">CM-4 - Impact Analyses</a></li>
+                
+                    <li><a href="/high/cm-5/">CM-5 - Access Restrictions for Change</a></li>
+                
+                    <li><a href="/high/cm-6/">CM-6 - Configuration Settings</a></li>
+                
+                    <li><a href="/high/cm-7/">CM-7 - Least Functionality</a></li>
+                
+                    <li><a href="/high/cm-8/">CM-8 - System Component Inventory</a></li>
+                
+                    <li><a href="/high/cm-9/">CM-9 - Configuration Management Plan</a></li>
+                
+                    <li><a href="/high/cm-10/">CM-10 - Software Usage Restrictions</a></li>
+                
+                    <li><a href="/high/cm-11/">CM-11 - User-installed Software</a></li>
+                
+                    <li><a href="/high/cm-12/">CM-12 - Information Location</a></li>
+                
+                    <li><a href="/high/cm-14/">CM-14 - Signed Components</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="contingency-planning">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Contingency Planning</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="contingency-planning">
+                
+                    <li><a href="/high/cp-1/">CP-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/cp-2/">CP-2 - Contingency Plan</a></li>
+                
+                    <li><a href="/high/cp-3/">CP-3 - Contingency Training</a></li>
+                
+                    <li><a href="/high/cp-4/">CP-4 - Contingency Plan Testing</a></li>
+                
+                    <li><a href="/high/cp-6/">CP-6 - Alternate Storage Site</a></li>
+                
+                    <li><a href="/high/cp-7/">CP-7 - Alternate Processing Site</a></li>
+                
+                    <li><a href="/high/cp-8/">CP-8 - Telecommunications Services</a></li>
+                
+                    <li><a href="/high/cp-9/">CP-9 - System Backup</a></li>
+                
+                    <li><a href="/high/cp-10/">CP-10 - System Recovery and Reconstitution</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="identification-and-authentication">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Identification and Authentication</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="identification-and-authentication">
+                
+                    <li><a href="/high/ia-1/">IA-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/ia-2/">IA-2 - Identification and Authentication (Organizational Users)</a></li>
+                
+                    <li><a href="/high/ia-3/">IA-3 - Device Identification and Authentication</a></li>
+                
+                    <li><a href="/high/ia-4/">IA-4 - Identifier Management</a></li>
+                
+                    <li><a href="/high/ia-5/">IA-5 - Authenticator Management</a></li>
+                
+                    <li><a href="/high/ia-6/">IA-6 - Authentication Feedback</a></li>
+                
+                    <li><a href="/high/ia-7/">IA-7 - Cryptographic Module Authentication</a></li>
+                
+                    <li><a href="/high/ia-8/">IA-8 - Identification and Authentication (Non-organizational Users)</a></li>
+                
+                    <li><a href="/high/ia-11/">IA-11 - Re-authentication</a></li>
+                
+                    <li><a href="/high/ia-12/">IA-12 - Identity Proofing</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="incident-response">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Incident Response</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="incident-response">
+                
+                    <li><a href="/high/ir-1/">IR-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/ir-2/">IR-2 - Incident Response Training</a></li>
+                
+                    <li><a href="/high/ir-3/">IR-3 - Incident Response Testing</a></li>
+                
+                    <li><a href="/high/ir-4/">IR-4 - Incident Handling</a></li>
+                
+                    <li><a href="/high/ir-5/">IR-5 - Incident Monitoring</a></li>
+                
+                    <li><a href="/high/ir-6/">IR-6 - Incident Reporting</a></li>
+                
+                    <li><a href="/high/ir-7/">IR-7 - Incident Response Assistance</a></li>
+                
+                    <li><a href="/high/ir-8/">IR-8 - Incident Response Plan</a></li>
+                
+                    <li><a href="/high/ir-9/">IR-9 - Information Spillage Response</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="maintenance">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Maintenance</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="maintenance">
+                
+                    <li><a href="/high/ma-1/">MA-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/ma-2/">MA-2 - Controlled Maintenance</a></li>
+                
+                    <li><a href="/high/ma-3/">MA-3 - Maintenance Tools</a></li>
+                
+                    <li><a href="/high/ma-4/">MA-4 - Nonlocal Maintenance</a></li>
+                
+                    <li><a href="/high/ma-5/">MA-5 - Maintenance Personnel</a></li>
+                
+                    <li><a href="/high/ma-6/">MA-6 - Timely Maintenance</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="media-protection">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Media Protection</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="media-protection">
+                
+                    <li><a href="/high/mp-1/">MP-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/mp-2/">MP-2 - Media Access</a></li>
+                
+                    <li><a href="/high/mp-3/">MP-3 - Media Marking</a></li>
+                
+                    <li><a href="/high/mp-4/">MP-4 - Media Storage</a></li>
+                
+                    <li><a href="/high/mp-5/">MP-5 - Media Transport</a></li>
+                
+                    <li><a href="/high/mp-6/">MP-6 - Media Sanitization</a></li>
+                
+                    <li><a href="/high/mp-7/">MP-7 - Media Use</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="personnel-security">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Personnel Security</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="personnel-security">
+                
+                    <li><a href="/high/ps-1/">PS-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/ps-2/">PS-2 - Position Risk Designation</a></li>
+                
+                    <li><a href="/high/ps-3/">PS-3 - Personnel Screening</a></li>
+                
+                    <li><a href="/high/ps-4/">PS-4 - Personnel Termination</a></li>
+                
+                    <li><a href="/high/ps-5/">PS-5 - Personnel Transfer</a></li>
+                
+                    <li><a href="/high/ps-6/">PS-6 - Access Agreements</a></li>
+                
+                    <li><a href="/high/ps-7/">PS-7 - External Personnel Security</a></li>
+                
+                    <li><a href="/high/ps-8/">PS-8 - Personnel Sanctions</a></li>
+                
+                    <li><a href="/high/ps-9/">PS-9 - Position Descriptions</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="physical-and-environmental-protection">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Physical and Environmental Protection</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="physical-and-environmental-protection">
+                
+                    <li><a href="/high/pe-1/">PE-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/pe-2/">PE-2 - Physical Access Authorizations</a></li>
+                
+                    <li><a href="/high/pe-3/">PE-3 - Physical Access Control</a></li>
+                
+                    <li><a href="/high/pe-4/">PE-4 - Access Control for Transmission</a></li>
+                
+                    <li><a href="/high/pe-5/">PE-5 - Access Control for Output Devices</a></li>
+                
+                    <li><a href="/high/pe-6/">PE-6 - Monitoring Physical Access</a></li>
+                
+                    <li><a href="/high/pe-8/">PE-8 - Visitor Access Records</a></li>
+                
+                    <li><a href="/high/pe-9/">PE-9 - Power Equipment and Cabling</a></li>
+                
+                    <li><a href="/high/pe-10/">PE-10 - Emergency Shutoff</a></li>
+                
+                    <li><a href="/high/pe-11/">PE-11 - Emergency Power</a></li>
+                
+                    <li><a href="/high/pe-12/">PE-12 - Emergency Lighting</a></li>
+                
+                    <li><a href="/high/pe-13/">PE-13 - Fire Protection</a></li>
+                
+                    <li><a href="/high/pe-14/">PE-14 - Environmental Controls</a></li>
+                
+                    <li><a href="/high/pe-15/">PE-15 - Water Damage Protection</a></li>
+                
+                    <li><a href="/high/pe-16/">PE-16 - Delivery and Removal</a></li>
+                
+                    <li><a href="/high/pe-17/">PE-17 - Alternate Work Site</a></li>
+                
+                    <li><a href="/high/pe-18/">PE-18 - Location of System Components</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="planning">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Planning</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="planning">
+                
+                    <li><a href="/high/pl-1/">PL-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/pl-2/">PL-2 - System Security and Privacy Plans</a></li>
+                
+                    <li><a href="/high/pl-4/">PL-4 - Rules of Behavior</a></li>
+                
+                    <li><a href="/high/pl-8/">PL-8 - Security and Privacy Architectures</a></li>
+                
+                    <li><a href="/high/pl-10/">PL-10 - Baseline Selection</a></li>
+                
+                    <li><a href="/high/pl-11/">PL-11 - Baseline Tailoring</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="risk-assessment">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Risk Assessment</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="risk-assessment">
+                
+                    <li><a href="/high/ra-1/">RA-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/ra-2/">RA-2 - Security Categorization</a></li>
+                
+                    <li><a href="/high/ra-3/">RA-3 - Risk Assessment</a></li>
+                
+                    <li><a href="/high/ra-5/">RA-5 - Vulnerability Monitoring and Scanning</a></li>
+                
+                    <li><a href="/high/ra-7/">RA-7 - Risk Response</a></li>
+                
+                    <li><a href="/high/ra-9/">RA-9 - Criticality Analysis</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="supply-chain-risk-management">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Supply Chain Risk Management</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="supply-chain-risk-management">
+                
+                    <li><a href="/high/sr-1/">SR-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/sr-2/">SR-2 - Supply Chain Risk Management Plan</a></li>
+                
+                    <li><a href="/high/sr-3/">SR-3 - Supply Chain Controls and Processes</a></li>
+                
+                    <li><a href="/high/sr-5/">SR-5 - Acquisition Strategies, Tools, and Methods</a></li>
+                
+                    <li><a href="/high/sr-6/">SR-6 - Supplier Assessments and Reviews</a></li>
+                
+                    <li><a href="/high/sr-8/">SR-8 - Notification Agreements</a></li>
+                
+                    <li><a href="/high/sr-9/">SR-9 - Tamper Resistance and Detection</a></li>
+                
+                    <li><a href="/high/sr-10/">SR-10 - Inspection of Systems or Components</a></li>
+                
+                    <li><a href="/high/sr-11/">SR-11 - Component Authenticity</a></li>
+                
+                    <li><a href="/high/sr-12/">SR-12 - Component Disposal</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="system-and-communications-protection">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>System and Communications Protection</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="system-and-communications-protection">
+                
+                    <li><a href="/high/sc-1/">SC-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/sc-2/">SC-2 - Separation of System and User Functionality</a></li>
+                
+                    <li><a href="/high/sc-3/">SC-3 - Security Function Isolation</a></li>
+                
+                    <li><a href="/high/sc-4/">SC-4 - Information in Shared System Resources</a></li>
+                
+                    <li><a href="/high/sc-5/">SC-5 - Denial-of-service Protection</a></li>
+                
+                    <li><a href="/high/sc-7/">SC-7 - Boundary Protection</a></li>
+                
+                    <li><a href="/high/sc-8/">SC-8 - Transmission Confidentiality and Integrity</a></li>
+                
+                    <li><a href="/high/sc-10/">SC-10 - Network Disconnect</a></li>
+                
+                    <li><a href="/high/sc-12/">SC-12 - Cryptographic Key Establishment and Management</a></li>
+                
+                    <li><a href="/high/sc-13/">SC-13 - Cryptographic Protection</a></li>
+                
+                    <li><a href="/high/sc-15/">SC-15 - Collaborative Computing Devices and Applications</a></li>
+                
+                    <li><a href="/high/sc-17/">SC-17 - Public Key Infrastructure Certificates</a></li>
+                
+                    <li><a href="/high/sc-18/">SC-18 - Mobile Code</a></li>
+                
+                    <li><a href="/high/sc-20/">SC-20 - Secure Name/Address Resolution Service (Authoritative Source)</a></li>
+                
+                    <li><a href="/high/sc-21/">SC-21 - Secure Name/Address Resolution Service (Recursive or Caching Resolver)</a></li>
+                
+                    <li><a href="/high/sc-22/">SC-22 - Architecture and Provisioning for Name/Address Resolution Service</a></li>
+                
+                    <li><a href="/high/sc-23/">SC-23 - Session Authenticity</a></li>
+                
+                    <li><a href="/high/sc-24/">SC-24 - Fail in Known State</a></li>
+                
+                    <li><a href="/high/sc-28/">SC-28 - Protection of Information at Rest</a></li>
+                
+                    <li><a href="/high/sc-39/">SC-39 - Process Isolation</a></li>
+                
+                    <li><a href="/high/sc-45/">SC-45 - System Time Synchronization</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="system-and-information-integrity">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>System and Information Integrity</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="system-and-information-integrity">
+                
+                    <li><a href="/high/si-1/">SI-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/si-2/">SI-2 - Flaw Remediation</a></li>
+                
+                    <li><a href="/high/si-3/">SI-3 - Malicious Code Protection</a></li>
+                
+                    <li><a href="/high/si-4/">SI-4 - System Monitoring</a></li>
+                
+                    <li><a href="/high/si-5/">SI-5 - Security Alerts, Advisories, and Directives</a></li>
+                
+                    <li><a href="/high/si-6/">SI-6 - Security and Privacy Function Verification</a></li>
+                
+                    <li><a href="/high/si-7/">SI-7 - Software, Firmware, and Information Integrity</a></li>
+                
+                    <li><a href="/high/si-8/">SI-8 - Spam Protection</a></li>
+                
+                    <li><a href="/high/si-10/">SI-10 - Information Input Validation</a></li>
+                
+                    <li><a href="/high/si-11/">SI-11 - Error Handling</a></li>
+                
+                    <li><a href="/high/si-12/">SI-12 - Information Management and Retention</a></li>
+                
+                    <li><a href="/high/si-16/">SI-16 - Memory Protection</a></li>
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="system-and-services-acquisition">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>System and Services Acquisition</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="system-and-services-acquisition">
+                
+                    <li><a href="/high/sa-1/">SA-1 - Policy and Procedures</a></li>
+                
+                    <li><a href="/high/sa-2/">SA-2 - Allocation of Resources</a></li>
+                
+                    <li><a href="/high/sa-3/">SA-3 - System Development Life Cycle</a></li>
+                
+                    <li><a href="/high/sa-4/">SA-4 - Acquisition Process</a></li>
+                
+                    <li><a href="/high/sa-5/">SA-5 - System Documentation</a></li>
+                
+                    <li><a href="/high/sa-8/">SA-8 - Security and Privacy Engineering Principles</a></li>
+                
+                    <li><a href="/high/sa-9/">SA-9 - External System Services</a></li>
+                
+                    <li><a href="/high/sa-10/">SA-10 - Developer Configuration Management</a></li>
+                
+                    <li><a href="/high/sa-11/">SA-11 - Developer Testing and Evaluation</a></li>
+                
+                    <li><a href="/high/sa-15/">SA-15 - Development Process, Standards, and Tools</a></li>
+                
+                    <li><a href="/high/sa-16/">SA-16 - Developer-provided Training</a></li>
+                
+                    <li><a href="/high/sa-17/">SA-17 - Developer Security and Privacy Architecture and Design</a></li>
+                
+                    <li><a href="/high/sa-21/">SA-21 - Developer Screening</a></li>
+                
+                    <li><a href="/high/sa-22/">SA-22 - Unsupported System Components</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+
+        </div>
+        <div id="main-content" class="w-3/4 p-8 overflow-y-auto">
+            
+    
+    
+    
+    
+
+    <h1 class="text-2xl font-bold mb-4">IA-11 Re-authentication</h1>
+
+    <div class="prose max-w-none"><h3 class="font-bold">Control</h3>
+
+
+    
+        
+    
+
+
+
+
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0"></span>
+    
+    <div class="flex-grow">
+        Require users to re-authenticate when [Assignment: organization-defined circumstances or situations].
+        
+            <div class="mt-1">
+                
+                    
+
+
+
+
+
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0"></span>
+    
+    <div class="flex-grow">
+        
+        
+            <div class="mt-1">
+                
+                    
+
+
+    
+        
+            
+        
+    
+
+
+
+
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0 font-mono text-right pr-4">Guidance:</span>
+    
+    <div class="flex-grow">
+        The fixed time period cannot exceed the limits set in SP 800-63. At this writing they are:
+
+* AAL3 (high baseline)    * 12 hours or   * 15 minutes of inactivity  
+
+        
+    </div>
+</div>
+
+                
+            </div>
+        
+    </div>
+</div>
+
+                
+            </div>
+        
+    </div>
+</div>
+<h3 class="font-bold mt-6">Discussion</h3>
+
+
+
+
+
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0"></span>
+    
+    <div class="flex-grow">
+        In addition to the re-authentication requirements associated with device locks, organizations may require re-authentication of individuals in certain situations, including when roles, authenticators or credentials change, when security categories of systems change, when the execution of privileged functions occurs, after a fixed time period, or periodically.
+        
+    </div>
+</div>
+</div>
+
+    <h2 class="text-xl font-bold mt-8 mb-4">FedRAMP-Defined Assignment / Selection Parameters</h2>
+    
+        <p>N/A</p>
+    
+
+        </div>
+    </div>
+    
+    
+    
+    <script src="http://localhost:1313/js/bundle.min.js"></script>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-auto">
+    <p>Revision 5 FedRAMP Controls originally published at fedramp.gov. Need help building your FedRAMP program? <a href="https://scalesec.com/fedramp" class="underline" target="_blank" rel="noopener noreferrer">https://scalesec.com/fedramp</a></p>
+</footer>
+
+</body>
+</html>

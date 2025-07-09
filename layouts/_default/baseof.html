@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | FedRAMP Explorer</title>
+    {{ $style := resources.Get "css/main.css" | postCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body class="bg-gray-100">
+    {{ partial "header.html" . }}
+    <div id="container" class="flex">
+        <div id="sidebar" class="w-1/4 bg-white h-screen p-4 overflow-y-auto">
+            {{ partial "sidebar.html" . }}
+        </div>
+        <div id="main-content" class="w-3/4 p-8 overflow-y-auto">
+            {{ block "main" . }}{{ end }}
+        </div>
+    </div>
+    {{ $fuse := resources.Get "js/fuse.min.js" }}
+    {{ $search := resources.Get "js/search.js" }}
+    {{ $js := slice $fuse $search | resources.Concat "js/bundle.js" | resources.Minify }}
+    <script src="{{ $js.Permalink }}"></script>
+    {{ partial "footer.html" . }}
+</body>
+</html>

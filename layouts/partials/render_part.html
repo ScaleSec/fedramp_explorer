@@ -1,0 +1,46 @@
+{{/* Get the label for the current item, e.g., "a." or "1." */}}
+{{ $label := "" }}
+{{ with .part.props }}
+    {{ range . }}
+        {{ if eq .name "label" }}
+            {{ $label = .value }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{/* Perform parameter substitution on the prose */}}
+{{ $prose := .part.prose }}
+{{ range $key, $param := .params }}
+    {{ $placeholder := printf "{{ insert: param, %s }}" $key }}
+    {{ $replacement := "" }}
+    {{ if $param.select }}
+        {{ $replacement = printf "[Selection (one or more): %s]" (delimit $param.select.choice "; ") }}
+    {{ else if $param.constraints }}
+        {{ $replacement = printf "[%s]" (index $param.constraints 0).description }}
+    {{ else }}
+        {{ $labelText := .label }}
+        {{ if not (strings.HasPrefix .label "organization-defined") }}
+            {{ $labelText = printf "organization-defined %s" .label }}
+        {{ end }}
+        {{ $replacement = printf "[Assignment: %s]" $labelText }}
+    {{ end }}
+    {{ $prose = replace $prose $placeholder $replacement }}
+{{ end }}
+
+<div class="flex flex-row py-1">
+    {{ if $label }}
+        <span class="w-16 flex-shrink-0 font-mono text-right pr-4">{{ $label }}</span>
+    {{ else }}
+        <span class="w-16 flex-shrink-0"></span>
+    {{ end }}
+    <div class="flex-grow">
+        {{ $prose | safeHTML }}
+        {{ if .part.parts }}
+            <div class="mt-1">
+                {{ range .part.parts }}
+                    {{ partial "render_part.html" (dict "part" . "params" $.params) }}
+                {{ end }}
+            </div>
+        {{ end }}
+    </div>
+</div>
