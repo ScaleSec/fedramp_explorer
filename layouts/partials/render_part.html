@@ -34,7 +34,7 @@
         <span class="w-16 flex-shrink-0"></span>
     {{ end }}
     <div class="flex-grow">
-        {{ $prose | safeHTML }}
+        {{ $prose | markdownify }}
         {{ if .part.parts }}
             <div class="mt-1">
                 {{ range .part.parts }}

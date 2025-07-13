@@ -18,7 +18,11 @@
             </h3>
             <ul class="ml-4 hidden" data-controls-for="{{ $family | urlize }}">
                 {{ range where $data "family" $family }}
-                    <li><a href="/{{ $currentSection }}/{{ .id }}/">{{ .id | upper }} - {{ .title }}</a></li>
+                    {{ if .enhancement }}
+                        <li><a href="/{{ $currentSection }}/{{ .id }}/" class="enhancement-control">{{ .id | upper }} - {{ .title }}</a></li>
+                    {{ else }}
+                        <li><a href="/{{ $currentSection }}/{{ .id }}/">{{ .id | upper }} - {{ .title }}</a></li>
+                    {{ end }}
                 {{ end }}
             </ul>
         </div>

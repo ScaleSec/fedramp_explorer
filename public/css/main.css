@@ -121,6 +121,11 @@
 .active-control {
   background-color: #e5e7eb;
 }
+.enhancement-control {
+  color: #6b7280;
+  font-style: italic;
+  padding-left: 1rem;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;

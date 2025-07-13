@@ -93,4 +93,79 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    // Handle family links (e.g., links to #pe, #ac, etc.)
+    function openFamily(familyAbbrev) {
+        // Mapping from family abbreviations to their full urlized names
+        const familyMapping = {
+            'pe': 'physical-and-environmental-protection',
+            'ac': 'access-control',
+            'au': 'audit-and-accountability',
+            'at': 'awareness-and-training',
+            'ca': 'assessment-authorization-and-monitoring',
+            'cm': 'configuration-management',
+            'cp': 'contingency-planning',
+            'ia': 'identification-and-authentication',
+            'ir': 'incident-response',
+            'ma': 'maintenance',
+            'mp': 'media-protection',
+            'ps': 'personnel-security',
+            'pl': 'planning',
+            'ra': 'risk-assessment',
+            'sa': 'system-and-services-acquisition',
+            'sc': 'system-and-communications-protection',
+            'si': 'system-and-information-integrity',
+            'sr': 'supply-chain-risk-management'
+        };
+
+        const familyName = familyMapping[familyAbbrev.toLowerCase()];
+        if (!familyName) return false;
+
+        // Close all families first
+        accordionHeaders.forEach(header => {
+            const family = header.dataset.family;
+            const controlsList = document.querySelector(`[data-controls-for="${family}"]`);
+            const icon = header.querySelector('svg');
+            if (controlsList && !controlsList.classList.contains('hidden')) {
+                controlsList.classList.add('hidden');
+                icon.classList.remove('rotate-90');
+            }
+        });
+
+        // Open the target family
+        const targetHeader = document.querySelector(`[data-family="${familyName}"]`);
+        const targetControlsList = document.querySelector(`[data-controls-for="${familyName}"]`);
+        const targetIcon = targetHeader.querySelector('svg');
+
+        if (targetControlsList && targetHeader) {
+            targetControlsList.classList.remove('hidden');
+            targetIcon.classList.add('rotate-90');
+            
+            // Scroll the family into view
+            targetHeader.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            
+            return true;
+        }
+        return false;
+    }
+
+    // Listen for clicks on family links in the main content
+    document.addEventListener('click', function(event) {
+        const target = event.target;
+        
+        // Check if the clicked element is a link with a hash that looks like a family abbreviation
+        if (target.tagName === 'A' && target.getAttribute('href')) {
+            const href = target.getAttribute('href');
+            
+            // Check if it's a hash link that matches a family pattern
+            if (href.match(/^#[a-z]{2,3}$/)) {
+                const familyAbbrev = href.substring(1); // Remove the #
+                
+                if (openFamily(familyAbbrev)) {
+                    event.preventDefault(); // Prevent default link behavior
+                    return false;
+                }
+            }
+        }
+    });
 });
