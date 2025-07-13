@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#search-results {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.active-control {
+    background-color: #e5e7eb; /* This is the same color as bg-gray-200 */
+}
+
+.enhancement-control {
+    color: #6b7280; /* This is the same color as text-gray-500 */
+    font-style: italic;
+    padding-left: 1rem; /* Indent enhancement controls */
+}

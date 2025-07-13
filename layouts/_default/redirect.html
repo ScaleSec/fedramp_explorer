@@ -1,0 +1,7 @@
+{{ define "main" }}
+    <h1 class="text-2xl font-bold mb-4">{{ .Title }}</h1>
+    
+    <div class="prose max-w-none">
+        {{ .Content | replaceRE `<a href="https://csf\.tools([^"]*)"` `<a href="https://csf.tools$1" target="_blank"` | safeHTML }}
+    </div>
+{{ end }}

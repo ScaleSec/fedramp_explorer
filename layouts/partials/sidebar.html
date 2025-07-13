@@ -1,0 +1,30 @@
+<h2 class="text-lg font-bold mb-4">Controls</h2>
+<div id="control-family-accordion">
+    {{ $currentSection := .Section }}
+    {{ $data := (index .Site.Data $currentSection).controls }}
+
+    {{ $families := slice }}
+    {{ range $data }}
+        {{ $families = $families | append .family }}
+    {{ end }}
+    {{ $uniqueFamilies := $families | uniq | sort }}
+
+    {{ range $uniqueFamilies }}
+        {{ $family := . }}
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="{{ $family | urlize }}">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>{{ $family }}</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="{{ $family | urlize }}">
+                {{ range where $data "family" $family }}
+                    {{ if .enhancement }}
+                        <li><a href="/{{ $currentSection }}/{{ .id }}/" class="enhancement-control">{{ .id | upper }} - {{ .title }}</a></li>
+                    {{ else }}
+                        <li><a href="/{{ $currentSection }}/{{ .id }}/">{{ .id | upper }} - {{ .title }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    {{ end }}
+</div>

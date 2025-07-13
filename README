@@ -1,19 +1,41 @@
-git clone git@github.com:louissimps/fedramp_explorer.git
-cd fedramp_explorer/
+# FedRAMP Explorer
 
-Go get the appropriate version of the controls file from the parser project
-cp ../fedramp_parser/output/controls.json _data
+This website provides a simple way to browse and search the FedRAMP controls.
 
-Generate the Enhancements dataset
-cat _data/controls.json | jq '[.[] | . as $c | $c | $c.Enhancements[] as $e  |  {"ControlID": $c.ID, "ControlFamily": $c.Family, "ID": $e.ID, "ControlTitle": $c.TITLE, "EnhancementText": $e.ControlText, "IaseGuidance": $e.IaseGuidance, "FedrampGuidance": $e.FedrampGuidance, "SupplementalGuidance": $e.SupplementalGuidance, "Impacts": $e.Impacts, "RelatedControls": $e.RelatedControls, "Parameters": $e.Parameters }]' > _data/enhancements.json 
+## Prerequisites
 
+- [Node.js](https://nodejs.org/)
+- [Hugo](https://gohugo.io/)
 
+## Getting Started
 
-jekyll serve
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ScaleSec/fedramp_explorer.git
+   cd fedramp_explorer
+   ```
 
-to deploy to aws
-jekyll build 
-aws s3 sync _site/ s3://fedramp-explorer/ 
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
+3. **Generate data and content:**
+   This command processes the raw FedRAMP data, generates the JSON files used by the site, and creates the markdown content files for each control.
+   ```bash
+   node scripts/process_data.js
+   ```
 
+4. **Run the development server:**
+   ```bash
+   hugo server
+   ```
+   The site will be available at `http://localhost:1313`.
 
+## Building the Site
+
+To build the static site for deployment, run:
+```bash
+hugo
+```
+The generated site will be in the `public` directory.

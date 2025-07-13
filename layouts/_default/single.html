@@ -1,0 +1,33 @@
+{{ define "main" }}
+    {{ $controlId := .Params.control_id }}
+    {{ $baseline := .Section }}
+    {{ $data := (index .Site.Data $baseline).controls }}
+    {{ $control := index (where $data "id" $controlId) 0 }}
+
+    <h1 class="text-2xl font-bold mb-4">{{ $control.id | upper }} {{ $control.title }}</h1>
+
+    <div class="prose max-w-none">
+        {{- with (index (where $control.parts "name" "statement") 0) -}}
+            <h3 class="font-bold">Control</h3>
+            {{- partial "render_part.html" (dict "part" . "params" $control.params) -}}
+        {{- end -}}
+
+        {{- with (index (where $control.parts "name" "guidance") 0) -}}
+            <h3 class="font-bold mt-6">Discussion</h3>
+            {{- partial "render_part.html" (dict "part" . "params" $control.params) -}}
+        {{- end -}}
+    </div>
+
+    <h2 class="text-xl font-bold mt-8 mb-4">FedRAMP-Defined Assignment / Selection Parameters</h2>
+    {{ if gt (len $control.fedramp_params) 0 }}
+        <ul class="list-disc pl-5">
+            {{ range $control.fedramp_params }}
+                <li>
+                    <strong>{{ .outlineId }}</strong> {{ .value }} - {{ .guideline }}
+                </li>
+            {{ end }}
+        </ul>
+    {{ else }}
+        <p>N/A</p>
+    {{ end }}
+{{ end }}

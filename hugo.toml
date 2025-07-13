@@ -1,0 +1,3 @@
+baseURL = 'https://fedramp.scalesec.com/'
+languageCode = 'en-us'
+title = 'FedRAMP Explorer'

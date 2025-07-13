@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Termination | FedRAMP Explorer</title>
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/main.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl"><a href="/">FedRAMP Control Explorer</a></h1>
+    <div class="relative">
+        <input type="text" id="search-input" placeholder="Search controls..." class="bg-gray-700 text-white rounded-md p-2">
+        <ul id="search-results" class="absolute w-full z-10"></ul>
+    </div>
+    <nav>
+        <div class="flex space-x-4 items-center">
+            <span>Baseline: </span>
+            <select id="baseline-selector" onchange="location = this.value;" class="bg-gray-700 text-white rounded-md p-2">
+                <option value="/high/" >High</option>
+                <option value="/moderate/" selected>Moderate</option>
+                <option value="/low/" >Low</option>
+                <option value="/li-saas/" >LI-SaaS</option>
+            </select>
+        </div>
+    </nav>
+</header>
+
+    <div id="container" class="flex">
+        <div id="sidebar" class="w-1/4 bg-white h-screen p-4 overflow-y-auto">
+            <h2 class="text-lg font-bold mb-4">Controls</h2>
+<div id="control-family-accordion">
+    
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    
+
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="access-control">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Access Control</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="access-control">
+                
+                    
+                        <li><a href="/moderate/ac-1/">AC-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2/">AC-2 - Account Management</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.1/" class="enhancement-control">AC-2.1 - Automated System Account Management</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.2/" class="enhancement-control">AC-2.2 - Automated Temporary and Emergency Account Management</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.3/" class="enhancement-control">AC-2.3 - Disable Accounts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.4/" class="enhancement-control">AC-2.4 - Automated Audit Actions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.5/" class="enhancement-control">AC-2.5 - Inactivity Logout</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.7/" class="enhancement-control">AC-2.7 - Privileged User Accounts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.9/" class="enhancement-control">AC-2.9 - Restrictions on Use of Shared and Group Accounts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.12/" class="enhancement-control">AC-2.12 - Account Monitoring for Atypical Usage</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-2.13/" class="enhancement-control">AC-2.13 - Disable Accounts for High-risk Individuals</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-3/">AC-3 - Access Enforcement</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-4/">AC-4 - Information Flow Enforcement</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-4.21/" class="enhancement-control">AC-4.21 - Physical or Logical Separation of Information Flows</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-5/">AC-5 - Separation of Duties</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-6/">AC-6 - Least Privilege</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-6.1/" class="enhancement-control">AC-6.1 - Authorize Access to Security Functions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-6.2/" class="enhancement-control">AC-6.2 - Non-privileged Access for Nonsecurity Functions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-6.5/" class="enhancement-control">AC-6.5 - Privileged Accounts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-6.7/" class="enhancement-control">AC-6.7 - Review of User Privileges</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-6.9/" class="enhancement-control">AC-6.9 - Log Use of Privileged Functions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-6.10/" class="enhancement-control">AC-6.10 - Prohibit Non-privileged Users from Executing Privileged Functions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-7/">AC-7 - Unsuccessful Logon Attempts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-8/">AC-8 - System Use Notification</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-11/">AC-11 - Device Lock</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-11.1/" class="enhancement-control">AC-11.1 - Pattern-hiding Displays</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-12/">AC-12 - Session Termination</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-14/">AC-14 - Permitted Actions Without Identification or Authentication</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-17/">AC-17 - Remote Access</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-17.1/" class="enhancement-control">AC-17.1 - Monitoring and Control</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-17.2/" class="enhancement-control">AC-17.2 - Protection of Confidentiality and Integrity Using Encryption</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-17.3/" class="enhancement-control">AC-17.3 - Managed Access Control Points</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-17.4/" class="enhancement-control">AC-17.4 - Privileged Commands and Access</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-18/">AC-18 - Wireless Access</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-18.1/" class="enhancement-control">AC-18.1 - Authentication and Encryption</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-18.3/" class="enhancement-control">AC-18.3 - Disable Wireless Networking</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-19/">AC-19 - Access Control for Mobile Devices</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-19.5/" class="enhancement-control">AC-19.5 - Full Device or Container-based Encryption</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-20/">AC-20 - Use of External Systems</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-20.1/" class="enhancement-control">AC-20.1 - Limits on Authorized Use</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-20.2/" class="enhancement-control">AC-20.2 - Portable Storage Devices — Restricted Use</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-21/">AC-21 - Information Sharing</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ac-22/">AC-22 - Publicly Accessible Content</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="assessment-authorization-and-monitoring">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Assessment, Authorization, and Monitoring</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="assessment-authorization-and-monitoring">
+                
+                    
+                        <li><a href="/moderate/ca-1/">CA-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-2/">CA-2 - Control Assessments</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-2.1/" class="enhancement-control">CA-2.1 - Independent Assessors</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-2.3/" class="enhancement-control">CA-2.3 - Leveraging Results from External Organizations</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-3/">CA-3 - Information Exchange</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-5/">CA-5 - Plan of Action and Milestones</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-6/">CA-6 - Authorization</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-7/">CA-7 - Continuous Monitoring</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-7.1/" class="enhancement-control">CA-7.1 - Independent Assessment</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-7.4/" class="enhancement-control">CA-7.4 - Risk Monitoring</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-8/">CA-8 - Penetration Testing</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-8.1/" class="enhancement-control">CA-8.1 - Independent Penetration Testing Agent or Team</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-8.2/" class="enhancement-control">CA-8.2 - Red Team Exercises</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ca-9/">CA-9 - Internal System Connections</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="audit-and-accountability">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Audit and Accountability</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="audit-and-accountability">
+                
+                    
+                        <li><a href="/moderate/au-1/">AU-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-2/">AU-2 - Event Logging</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-3/">AU-3 - Content of Audit Records</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-3.1/" class="enhancement-control">AU-3.1 - Additional Audit Information</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-4/">AU-4 - Audit Log Storage Capacity</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-5/">AU-5 - Response to Audit Logging Process Failures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-6/">AU-6 - Audit Record Review, Analysis, and Reporting</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-6.1/" class="enhancement-control">AU-6.1 - Automated Process Integration</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-6.3/" class="enhancement-control">AU-6.3 - Correlate Audit Record Repositories</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-7/">AU-7 - Audit Record Reduction and Report Generation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-7.1/" class="enhancement-control">AU-7.1 - Automatic Processing</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-8/">AU-8 - Time Stamps</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-9/">AU-9 - Protection of Audit Information</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-9.4/" class="enhancement-control">AU-9.4 - Access by Subset of Privileged Users</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-11/">AU-11 - Audit Record Retention</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/au-12/">AU-12 - Audit Record Generation</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="awareness-and-training">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Awareness and Training</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="awareness-and-training">
+                
+                    
+                        <li><a href="/moderate/at-1/">AT-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/at-2/">AT-2 - Literacy Training and Awareness</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/at-2.2/" class="enhancement-control">AT-2.2 - Insider Threat</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/at-2.3/" class="enhancement-control">AT-2.3 - Social Engineering and Mining</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/at-3/">AT-3 - Role-based Training</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/at-4/">AT-4 - Training Records</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="configuration-management">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Configuration Management</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="configuration-management">
+                
+                    
+                        <li><a href="/moderate/cm-1/">CM-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-2/">CM-2 - Baseline Configuration</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-2.2/" class="enhancement-control">CM-2.2 - Automation Support for Accuracy and Currency</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-2.3/" class="enhancement-control">CM-2.3 - Retention of Previous Configurations</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-2.7/" class="enhancement-control">CM-2.7 - Configure Systems and Components for High-risk Areas</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-3/">CM-3 - Configuration Change Control</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-3.2/" class="enhancement-control">CM-3.2 - Testing, Validation, and Documentation of Changes</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-3.4/" class="enhancement-control">CM-3.4 - Security and Privacy Representatives</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-4/">CM-4 - Impact Analyses</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-4.2/" class="enhancement-control">CM-4.2 - Verification of Controls</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-5/">CM-5 - Access Restrictions for Change</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-5.1/" class="enhancement-control">CM-5.1 - Automated Access Enforcement and Audit Records</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-5.5/" class="enhancement-control">CM-5.5 - Privilege Limitation for Production and Operation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-6/">CM-6 - Configuration Settings</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-6.1/" class="enhancement-control">CM-6.1 - Automated Management, Application, and Verification</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-7/">CM-7 - Least Functionality</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-7.1/" class="enhancement-control">CM-7.1 - Periodic Review</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-7.2/" class="enhancement-control">CM-7.2 - Prevent Program Execution</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-7.5/" class="enhancement-control">CM-7.5 - Authorized Software — Allow-by-exception</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-8/">CM-8 - System Component Inventory</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-8.1/" class="enhancement-control">CM-8.1 - Updates During Installation and Removal</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-8.3/" class="enhancement-control">CM-8.3 - Automated Unauthorized Component Detection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-9/">CM-9 - Configuration Management Plan</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-10/">CM-10 - Software Usage Restrictions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-11/">CM-11 - User-installed Software</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-12/">CM-12 - Information Location</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cm-12.1/" class="enhancement-control">CM-12.1 - Automated Tools to Support Information Location</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="contingency-planning">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Contingency Planning</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="contingency-planning">
+                
+                    
+                        <li><a href="/moderate/cp-1/">CP-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-2/">CP-2 - Contingency Plan</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-2.1/" class="enhancement-control">CP-2.1 - Coordinate with Related Plans</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-2.3/" class="enhancement-control">CP-2.3 - Resume Mission and Business Functions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-2.8/" class="enhancement-control">CP-2.8 - Identify Critical Assets</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-3/">CP-3 - Contingency Training</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-4/">CP-4 - Contingency Plan Testing</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-4.1/" class="enhancement-control">CP-4.1 - Coordinate with Related Plans</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-6/">CP-6 - Alternate Storage Site</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-6.1/" class="enhancement-control">CP-6.1 - Separation from Primary Site</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-6.3/" class="enhancement-control">CP-6.3 - Accessibility</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-7/">CP-7 - Alternate Processing Site</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-7.1/" class="enhancement-control">CP-7.1 - Separation from Primary Site</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-7.2/" class="enhancement-control">CP-7.2 - Accessibility</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-7.3/" class="enhancement-control">CP-7.3 - Priority of Service</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-8/">CP-8 - Telecommunications Services</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-8.1/" class="enhancement-control">CP-8.1 - Priority of Service Provisions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-8.2/" class="enhancement-control">CP-8.2 - Single Points of Failure</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-9/">CP-9 - System Backup</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-9.1/" class="enhancement-control">CP-9.1 - Testing for Reliability and Integrity</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-9.8/" class="enhancement-control">CP-9.8 - Cryptographic Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-10/">CP-10 - System Recovery and Reconstitution</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/cp-10.2/" class="enhancement-control">CP-10.2 - Transaction Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="identification-and-authentication">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Identification and Authentication</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="identification-and-authentication">
+                
+                    
+                        <li><a href="/moderate/ia-1/">IA-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-2/">IA-2 - Identification and Authentication (Organizational Users)</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-2.1/" class="enhancement-control">IA-2.1 - Multi-factor Authentication to Privileged Accounts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-2.2/" class="enhancement-control">IA-2.2 - Multi-factor Authentication to Non-privileged Accounts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-2.5/" class="enhancement-control">IA-2.5 - Individual Authentication with Group Authentication</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-2.6/" class="enhancement-control">IA-2.6 - Access to Accounts —separate Device</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-2.8/" class="enhancement-control">IA-2.8 - Access to Accounts — Replay Resistant</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-2.12/" class="enhancement-control">IA-2.12 - Acceptance of PIV Credentials</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-3/">IA-3 - Device Identification and Authentication</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-4/">IA-4 - Identifier Management</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-4.4/" class="enhancement-control">IA-4.4 - Identify User Status</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-5/">IA-5 - Authenticator Management</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-5.1/" class="enhancement-control">IA-5.1 - Password-based Authentication</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-5.2/" class="enhancement-control">IA-5.2 - Public Key-based Authentication</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-5.6/" class="enhancement-control">IA-5.6 - Protection of Authenticators</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-5.7/" class="enhancement-control">IA-5.7 - No Embedded Unencrypted Static Authenticators</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-6/">IA-6 - Authentication Feedback</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-7/">IA-7 - Cryptographic Module Authentication</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-8/">IA-8 - Identification and Authentication (Non-organizational Users)</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-8.1/" class="enhancement-control">IA-8.1 - Acceptance of PIV Credentials from Other Agencies</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-8.2/" class="enhancement-control">IA-8.2 - Acceptance of External Authenticators</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-8.4/" class="enhancement-control">IA-8.4 - Use of Defined Profiles</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-11/">IA-11 - Re-authentication</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-12/">IA-12 - Identity Proofing</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-12.2/" class="enhancement-control">IA-12.2 - Identity Evidence</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-12.3/" class="enhancement-control">IA-12.3 - Identity Evidence Validation and Verification</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ia-12.5/" class="enhancement-control">IA-12.5 - Address Confirmation</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="incident-response">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Incident Response</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="incident-response">
+                
+                    
+                        <li><a href="/moderate/ir-1/">IR-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-2/">IR-2 - Incident Response Training</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-3/">IR-3 - Incident Response Testing</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-3.2/" class="enhancement-control">IR-3.2 - Coordination with Related Plans</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-4/">IR-4 - Incident Handling</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-4.1/" class="enhancement-control">IR-4.1 - Automated Incident Handling Processes</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-5/">IR-5 - Incident Monitoring</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-6/">IR-6 - Incident Reporting</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-6.1/" class="enhancement-control">IR-6.1 - Automated Reporting</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-6.3/" class="enhancement-control">IR-6.3 - Supply Chain Coordination</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-7/">IR-7 - Incident Response Assistance</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-7.1/" class="enhancement-control">IR-7.1 - Automation Support for Availability of Information and Support</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-8/">IR-8 - Incident Response Plan</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-9/">IR-9 - Information Spillage Response</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-9.2/" class="enhancement-control">IR-9.2 - Training</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-9.3/" class="enhancement-control">IR-9.3 - Post-spill Operations</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ir-9.4/" class="enhancement-control">IR-9.4 - Exposure to Unauthorized Personnel</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="maintenance">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Maintenance</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="maintenance">
+                
+                    
+                        <li><a href="/moderate/ma-1/">MA-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-2/">MA-2 - Controlled Maintenance</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-3/">MA-3 - Maintenance Tools</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-3.1/" class="enhancement-control">MA-3.1 - Inspect Tools</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-3.2/" class="enhancement-control">MA-3.2 - Inspect Media</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-3.3/" class="enhancement-control">MA-3.3 - Prevent Unauthorized Removal</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-4/">MA-4 - Nonlocal Maintenance</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-5/">MA-5 - Maintenance Personnel</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-5.1/" class="enhancement-control">MA-5.1 - Individuals Without Appropriate Access</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ma-6/">MA-6 - Timely Maintenance</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="media-protection">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Media Protection</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="media-protection">
+                
+                    
+                        <li><a href="/moderate/mp-1/">MP-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/mp-2/">MP-2 - Media Access</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/mp-3/">MP-3 - Media Marking</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/mp-4/">MP-4 - Media Storage</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/mp-5/">MP-5 - Media Transport</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/mp-6/">MP-6 - Media Sanitization</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/mp-7/">MP-7 - Media Use</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="personnel-security">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Personnel Security</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="personnel-security">
+                
+                    
+                        <li><a href="/moderate/ps-1/">PS-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-2/">PS-2 - Position Risk Designation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-3/">PS-3 - Personnel Screening</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-3.3/" class="enhancement-control">PS-3.3 - Information Requiring Special Protective Measures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-4/">PS-4 - Personnel Termination</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-5/">PS-5 - Personnel Transfer</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-6/">PS-6 - Access Agreements</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-7/">PS-7 - External Personnel Security</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-8/">PS-8 - Personnel Sanctions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ps-9/">PS-9 - Position Descriptions</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="physical-and-environmental-protection">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Physical and Environmental Protection</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="physical-and-environmental-protection">
+                
+                    
+                        <li><a href="/moderate/pe-1/">PE-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-2/">PE-2 - Physical Access Authorizations</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-3/">PE-3 - Physical Access Control</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-4/">PE-4 - Access Control for Transmission</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-5/">PE-5 - Access Control for Output Devices</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-6/">PE-6 - Monitoring Physical Access</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-6.1/" class="enhancement-control">PE-6.1 - Intrusion Alarms and Surveillance Equipment</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-8/">PE-8 - Visitor Access Records</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-9/">PE-9 - Power Equipment and Cabling</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-10/">PE-10 - Emergency Shutoff</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-11/">PE-11 - Emergency Power</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-12/">PE-12 - Emergency Lighting</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-13/">PE-13 - Fire Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-13.1/" class="enhancement-control">PE-13.1 - Detection Systems — Automatic Activation and Notification</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-13.2/" class="enhancement-control">PE-13.2 - Suppression Systems — Automatic Activation and Notification</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-14/">PE-14 - Environmental Controls</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-15/">PE-15 - Water Damage Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-16/">PE-16 - Delivery and Removal</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pe-17/">PE-17 - Alternate Work Site</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="planning">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Planning</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="planning">
+                
+                    
+                        <li><a href="/moderate/pl-1/">PL-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pl-2/">PL-2 - System Security and Privacy Plans</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pl-4/">PL-4 - Rules of Behavior</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pl-4.1/" class="enhancement-control">PL-4.1 - Social Media and External Site/Application Usage Restrictions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pl-8/">PL-8 - Security and Privacy Architectures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pl-10/">PL-10 - Baseline Selection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/pl-11/">PL-11 - Baseline Tailoring</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="risk-assessment">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Risk Assessment</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="risk-assessment">
+                
+                    
+                        <li><a href="/moderate/ra-1/">RA-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-2/">RA-2 - Security Categorization</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-3/">RA-3 - Risk Assessment</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-3.1/" class="enhancement-control">RA-3.1 - Supply Chain Risk Assessment</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-5/">RA-5 - Vulnerability Monitoring and Scanning</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-5.2/" class="enhancement-control">RA-5.2 - Update Vulnerabilities to Be Scanned</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-5.3/" class="enhancement-control">RA-5.3 - Breadth and Depth of Coverage</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-5.5/" class="enhancement-control">RA-5.5 - Privileged Access</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-5.11/" class="enhancement-control">RA-5.11 - Public Disclosure Program</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-7/">RA-7 - Risk Response</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/ra-9/">RA-9 - Criticality Analysis</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="supply-chain-risk-management">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Supply Chain Risk Management</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="supply-chain-risk-management">
+                
+                    
+                        <li><a href="/moderate/sr-1/">SR-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-2/">SR-2 - Supply Chain Risk Management Plan</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-2.1/" class="enhancement-control">SR-2.1 - Establish SCRM Team</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-3/">SR-3 - Supply Chain Controls and Processes</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-5/">SR-5 - Acquisition Strategies, Tools, and Methods</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-6/">SR-6 - Supplier Assessments and Reviews</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-8/">SR-8 - Notification Agreements</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-10/">SR-10 - Inspection of Systems or Components</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-11/">SR-11 - Component Authenticity</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-11.1/" class="enhancement-control">SR-11.1 - Anti-counterfeit Training</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-11.2/" class="enhancement-control">SR-11.2 - Configuration Control for Component Service and Repair</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sr-12/">SR-12 - Component Disposal</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="system-and-communications-protection">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>System and Communications Protection</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="system-and-communications-protection">
+                
+                    
+                        <li><a href="/moderate/sc-1/">SC-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-2/">SC-2 - Separation of System and User Functionality</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-4/">SC-4 - Information in Shared System Resources</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-5/">SC-5 - Denial-of-service Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7/">SC-7 - Boundary Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7.3/" class="enhancement-control">SC-7.3 - Access Points</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7.4/" class="enhancement-control">SC-7.4 - External Telecommunications Services</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7.5/" class="enhancement-control">SC-7.5 - Deny by Default — Allow by Exception</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7.7/" class="enhancement-control">SC-7.7 - Split Tunneling for Remote Devices</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7.8/" class="enhancement-control">SC-7.8 - Route Traffic to Authenticated Proxy Servers</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7.12/" class="enhancement-control">SC-7.12 - Host-based Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-7.18/" class="enhancement-control">SC-7.18 - Fail Secure</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-8/">SC-8 - Transmission Confidentiality and Integrity</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-8.1/" class="enhancement-control">SC-8.1 - Cryptographic Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-10/">SC-10 - Network Disconnect</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-12/">SC-12 - Cryptographic Key Establishment and Management</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-13/">SC-13 - Cryptographic Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-15/">SC-15 - Collaborative Computing Devices and Applications</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-17/">SC-17 - Public Key Infrastructure Certificates</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-18/">SC-18 - Mobile Code</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-20/">SC-20 - Secure Name/Address Resolution Service (Authoritative Source)</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-21/">SC-21 - Secure Name/Address Resolution Service (Recursive or Caching Resolver)</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-22/">SC-22 - Architecture and Provisioning for Name/Address Resolution Service</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-23/">SC-23 - Session Authenticity</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-28/">SC-28 - Protection of Information at Rest</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-28.1/" class="enhancement-control">SC-28.1 - Cryptographic Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-39/">SC-39 - Process Isolation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-45/">SC-45 - System Time Synchronization</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sc-45.1/" class="enhancement-control">SC-45.1 - Synchronization with Authoritative Time Source</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="system-and-information-integrity">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>System and Information Integrity</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="system-and-information-integrity">
+                
+                    
+                        <li><a href="/moderate/si-1/">SI-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-2/">SI-2 - Flaw Remediation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-2.2/" class="enhancement-control">SI-2.2 - Automated Flaw Remediation Status</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-2.3/" class="enhancement-control">SI-2.3 - Time to Remediate Flaws and Benchmarks for Corrective Actions</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-3/">SI-3 - Malicious Code Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4/">SI-4 - System Monitoring</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4.1/" class="enhancement-control">SI-4.1 - System-wide Intrusion Detection System</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4.2/" class="enhancement-control">SI-4.2 - Automated Tools and Mechanisms for Real-time Analysis</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4.4/" class="enhancement-control">SI-4.4 - Inbound and Outbound Communications Traffic</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4.5/" class="enhancement-control">SI-4.5 - System-generated Alerts</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4.16/" class="enhancement-control">SI-4.16 - Correlate Monitoring Information</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4.18/" class="enhancement-control">SI-4.18 - Analyze Traffic and Covert Exfiltration</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-4.23/" class="enhancement-control">SI-4.23 - Host-based Devices</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-5/">SI-5 - Security Alerts, Advisories, and Directives</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-6/">SI-6 - Security and Privacy Function Verification</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-7/">SI-7 - Software, Firmware, and Information Integrity</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-7.1/" class="enhancement-control">SI-7.1 - Integrity Checks</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-7.7/" class="enhancement-control">SI-7.7 - Integration of Detection and Response</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-8/">SI-8 - Spam Protection</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-8.2/" class="enhancement-control">SI-8.2 - Automatic Updates</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-10/">SI-10 - Information Input Validation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-11/">SI-11 - Error Handling</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-12/">SI-12 - Information Management and Retention</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/si-16/">SI-16 - Memory Protection</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+        
+        <div>
+            <h3 class="font-bold cursor-pointer py-2 flex items-center" data-family="system-and-services-acquisition">
+                <svg style="width: 0.8em; height: 0.8em; margin-right: 0.5em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>System and Services Acquisition</span>
+            </h3>
+            <ul class="ml-4 hidden" data-controls-for="system-and-services-acquisition">
+                
+                    
+                        <li><a href="/moderate/sa-1/">SA-1 - Policy and Procedures</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-2/">SA-2 - Allocation of Resources</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-3/">SA-3 - System Development Life Cycle</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-4/">SA-4 - Acquisition Process</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-4.1/" class="enhancement-control">SA-4.1 - Functional Properties of Controls</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-4.2/" class="enhancement-control">SA-4.2 - Design and Implementation Information for Controls</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-4.9/" class="enhancement-control">SA-4.9 - Functions, Ports, Protocols, and Services in Use</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-4.10/" class="enhancement-control">SA-4.10 - Use of Approved PIV Products</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-5/">SA-5 - System Documentation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-8/">SA-8 - Security and Privacy Engineering Principles</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-9/">SA-9 - External System Services</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-9.1/" class="enhancement-control">SA-9.1 - Risk Assessments and Organizational Approvals</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-9.2/" class="enhancement-control">SA-9.2 - Identification of Functions, Ports, Protocols, and Services</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-9.5/" class="enhancement-control">SA-9.5 - Processing, Storage, and Service Location</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-10/">SA-10 - Developer Configuration Management</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-11/">SA-11 - Developer Testing and Evaluation</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-11.1/" class="enhancement-control">SA-11.1 - Static Code Analysis</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-11.2/" class="enhancement-control">SA-11.2 - Threat Modeling and Vulnerability Analyses</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-15/">SA-15 - Development Process, Standards, and Tools</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-15.3/" class="enhancement-control">SA-15.3 - Criticality Analysis</a></li>
+                    
+                
+                    
+                        <li><a href="/moderate/sa-22/">SA-22 - Unsupported System Components</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+</div>
+
+        </div>
+        <div id="main-content" class="w-3/4 p-8 overflow-y-auto">
+            
+    
+    
+    
+    
+
+    <h1 class="text-2xl font-bold mb-4">PS-4 Personnel Termination</h1>
+
+    <div class="prose max-w-none"><h3 class="font-bold">Control</h3>
+
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0"></span>
+    
+    <div class="flex-grow">
+        Upon termination of individual employment:
+        
+            <div class="mt-1">
+                
+                    
+
+
+    
+        
+    
+        
+            
+        
+    
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0 font-mono text-right pr-4">a.</span>
+    
+    <div class="flex-grow">
+        Disable system access within [four (4) hours];
+        
+    </div>
+</div>
+
+                
+                    
+
+
+    
+        
+    
+        
+            
+        
+    
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0 font-mono text-right pr-4">b.</span>
+    
+    <div class="flex-grow">
+        Terminate or revoke any authenticators and credentials associated with the individual;
+        
+    </div>
+</div>
+
+                
+                    
+
+
+    
+        
+    
+        
+            
+        
+    
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0 font-mono text-right pr-4">c.</span>
+    
+    <div class="flex-grow">
+        Conduct exit interviews that include a discussion of [Assignment: organization-defined information security topics];
+        
+    </div>
+</div>
+
+                
+                    
+
+
+    
+        
+    
+        
+            
+        
+    
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0 font-mono text-right pr-4">d.</span>
+    
+    <div class="flex-grow">
+        Retrieve all security-related organizational system-related property; and
+        
+    </div>
+</div>
+
+                
+                    
+
+
+    
+        
+    
+        
+            
+        
+    
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0 font-mono text-right pr-4">e.</span>
+    
+    <div class="flex-grow">
+        Retain access to organizational information and systems formerly controlled by terminated individual.
+        
+    </div>
+</div>
+
+                
+            </div>
+        
+    </div>
+</div>
+<h3 class="font-bold mt-6">Discussion</h3>
+
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    
+    
+    
+        
+        
+            
+        
+        
+    
+    
+
+
+<div class="flex flex-row py-1">
+    
+        <span class="w-16 flex-shrink-0"></span>
+    
+    <div class="flex-grow">
+        System property includes hardware authentication tokens, system administration technical manuals, keys, identification cards, and building passes. Exit interviews ensure that terminated individuals understand the security constraints imposed by being former employees and that proper accountability is achieved for system-related property. Security topics at exit interviews include reminding individuals of nondisclosure agreements and potential limitations on future employment. Exit interviews may not always be possible for some individuals, including in cases related to the unavailability of supervisors, illnesses, or job abandonment. Exit interviews are important for individuals with security clearances. The timely execution of termination actions is essential for individuals who have been terminated for cause. In certain situations, organizations consider disabling the system accounts of individuals who are being terminated prior to the individuals being notified.
+        
+    </div>
+</div>
+</div>
+
+    <h2 class="text-xl font-bold mt-8 mb-4">FedRAMP-Defined Assignment / Selection Parameters</h2>
+    
+        <ul class="list-disc pl-5">
+            
+                <li>
+                    <strong>PS-4 (a)</strong> [four (4) hours] - a time period within which to disable system access is defined;
+                </li>
+            
+        </ul>
+    
+
+        </div>
+    </div>
+    
+    
+    
+    <script src="http://localhost:1313/js/bundle.min.js"></script>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-auto">
+    <p>Revision 5 FedRAMP Controls originally published at fedramp.gov. Need help building your FedRAMP program? <a href="https://scalesec.com/fedramp" class="underline" target="_blank" rel="noopener noreferrer">https://scalesec.com/fedramp</a></p>
+</footer>
+
+</body>
+</html>
