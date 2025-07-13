@@ -149,6 +149,10 @@
   transition-timing-function: var(--tw-ease, ease);
   transition-duration: var(--tw-duration, 0s);
 }
+.duration-200 {
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
 .duration-300 {
   --tw-duration: 300ms;
   transition-duration: 300ms;
