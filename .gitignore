@@ -3,3 +3,4 @@ _site/
 *.lock.
 .DS_Store
 *.bk
+content/
