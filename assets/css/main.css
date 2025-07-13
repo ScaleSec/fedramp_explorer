@@ -19,24 +19,6 @@ a:hover {
     color: #003dc2; /* Slightly darker shade for hover */
 }
 
-/* Mobile menu button visibility */
-#mobile-menu-toggle {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    #mobile-menu-toggle {
-        display: block;
-    }
-}
-
-/* Desktop - hide mobile menu button */
-@media (min-width: 768px) {
-    #mobile-menu-toggle {
-        display: none !important;
-    }
-}
-
 /* Mobile navigation styles */
 @media (max-width: 768px) {
     header {
@@ -72,31 +54,6 @@ a:hover {
     
     header input[type="text"] {
         width: 100% !important;
-    }
-
-    /* Prevent body scrolling when mobile menu is open */
-    body.menu-open {
-        overflow: hidden;
-    }
-}
-
-/* Mobile sidebar styles */
-#sidebar {
-    top: 0;
-    left: 0;
-}
-
-/* Mobile dropdown sidebar styles */
-@media (max-width: 767px) {
-    #sidebar {
-        top: 0;
-        left: 0;
-        right: 0;
-        max-height: 60vh; /* Limit height to 60% of viewport */
-        border-bottom: 1px solid #e5e7eb;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        border-bottom-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
     }
 }
 
