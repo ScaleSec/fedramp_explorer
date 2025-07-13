@@ -1,19 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/_hcms/googlefonts/Inter/regular.woff2") format("woff2"), 
+         url("/_hcms/googlefonts/Inter/regular.woff") format("woff");
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Set hyperlink color to brand blue */
+a {
+    color: #004df2;
+}
+
+a:hover {
+    color: #003dc2; /* Slightly darker shade for hover */
+}
+
+/* Mobile menu button visibility */
+#mobile-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #mobile-menu-toggle {
+        display: block;
+    }
+}
+
+/* Desktop - hide mobile menu button */
+@media (min-width: 768px) {
+    #mobile-menu-toggle {
+        display: none !important;
+    }
+}
+
+/* Mobile navigation styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    
+    header h1 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    header .relative,
+    header nav {
+        width: 100% !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    header nav div {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0.5rem !important;
+    }
+    
+    header nav span {
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    
+    header select {
+        width: 100% !important;
+    }
+    
+    header input[type="text"] {
+        width: 100% !important;
+    }
+
+    /* Prevent body scrolling when mobile menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Mobile sidebar styles */
+#sidebar {
+    top: 0;
+    left: 0;
+}
+
+/* Mobile dropdown sidebar styles */
+@media (max-width: 767px) {
+    #sidebar {
+        top: 0;
+        left: 0;
+        right: 0;
+        max-height: 60vh; /* Limit height to 60% of viewport */
+        border-bottom: 1px solid #e5e7eb;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+}
+
 #search-results {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(244, 244, 244, 0.95); /* Updated to use brand-gray-light */
 }
 
 .active-control {
-    background-color: #e5e7eb; /* This is the same color as bg-gray-200 */
+    background-color: #DBDBDB; /* Updated to use brand-silver */
 }
 
 .enhancement-control {
-    color: #6b7280; /* This is the same color as text-gray-500 */
+    color: #4D4D4D; /* Updated to use brand-gray-dark */
     font-style: italic;
     padding-left: 1rem; /* Indent enhancement controls */
 }

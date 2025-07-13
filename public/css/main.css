@@ -1,6 +1,12 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @layer properties;
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/_hcms/googlefonts/Inter/regular.woff2") format("woff2"), 
+         url("/_hcms/googlefonts/Inter/regular.woff") format("woff");
+}
 .visible {
   visibility: visible;
 }
@@ -22,6 +28,12 @@
 .z-10 {
   z-index: 10;
 }
+.z-30 {
+  z-index: 30;
+}
+.z-40 {
+  z-index: 40;
+}
 .container {
   width: 100%;
 }
@@ -39,6 +51,9 @@
 }
 .hidden {
   display: none;
+}
+.h-auto {
+  height: auto;
 }
 .h-full {
   height: 100%;
@@ -70,11 +85,25 @@
 .flex-grow {
   flex-grow: 1;
 }
+.-translate-x-full {
+  --tw-translate-x: -100%;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.-translate-y-full {
+  --tw-translate-y: -100%;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
 .rotate-90 {
   rotate: 90deg;
 }
+.transform {
+  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+}
 .cursor-pointer {
   cursor: pointer;
+}
+.resize {
+  resize: both;
 }
 .list-disc {
   list-style-type: disc;
@@ -115,16 +144,128 @@
   transition-timing-function: var(--tw-ease, ease);
   transition-duration: var(--tw-duration, 0s);
 }
+.transition-transform {
+  transition-property: transform, translate, scale, rotate;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
+}
+.duration-300 {
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+a {
+  color: #004df2;
+}
+a:hover {
+  color: #003dc2;
+}
+#mobile-menu-toggle {
+  display: none;
+}
+@media (max-width: 767px) {
+  #mobile-menu-toggle {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #mobile-menu-toggle {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  header h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  header .relative,
+    header nav {
+    width: 100% !important;
+    margin-bottom: 0.5rem;
+  }
+  header nav div {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.5rem !important;
+  }
+  header nav span {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  header select {
+    width: 100% !important;
+  }
+  header input[type="text"] {
+    width: 100% !important;
+  }
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+#sidebar {
+  top: 0;
+  left: 0;
+}
+@media (max-width: 767px) {
+  #sidebar {
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 60vh;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
 #search-results {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(244, 244, 244, 0.95);
 }
 .active-control {
-  background-color: #e5e7eb;
+  background-color: #DBDBDB;
 }
 .enhancement-control {
-  color: #6b7280;
+  color: #4D4D4D;
   font-style: italic;
   padding-left: 1rem;
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -184,9 +325,21 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
@@ -201,6 +354,7 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
     }
   }
 }
