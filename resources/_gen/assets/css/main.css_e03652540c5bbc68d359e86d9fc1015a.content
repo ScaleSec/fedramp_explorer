@@ -1,6 +1,12 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @layer properties;
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/_hcms/googlefonts/Inter/regular.woff2") format("woff2"), 
+         url("/_hcms/googlefonts/Inter/regular.woff") format("woff");
+}
 .visible {
   visibility: visible;
 }
@@ -115,14 +121,20 @@
   transition-timing-function: var(--tw-ease, ease);
   transition-duration: var(--tw-duration, 0s);
 }
+a {
+  color: #004df2;
+}
+a:hover {
+  color: #003dc2;
+}
 #search-results {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(244, 244, 244, 0.95);
 }
 .active-control {
-  background-color: #e5e7eb;
+  background-color: #DBDBDB;
 }
 .enhancement-control {
-  color: #6b7280;
+  color: #4D4D4D;
   font-style: italic;
   padding-left: 1rem;
 }

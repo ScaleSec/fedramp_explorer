@@ -1,19 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/_hcms/googlefonts/Inter/regular.woff2") format("woff2"), 
+         url("/_hcms/googlefonts/Inter/regular.woff") format("woff");
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Set hyperlink color to brand blue */
+a {
+    color: #004df2;
+}
+
+a:hover {
+    color: #003dc2; /* Slightly darker shade for hover */
+}
+
 #search-results {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(244, 244, 244, 0.95); /* Updated to use brand-gray-light */
 }
 
 .active-control {
-    background-color: #e5e7eb; /* This is the same color as bg-gray-200 */
+    background-color: #DBDBDB; /* Updated to use brand-silver */
 }
 
 .enhancement-control {
-    color: #6b7280; /* This is the same color as text-gray-500 */
+    color: #4D4D4D; /* Updated to use brand-gray-dark */
     font-style: italic;
     padding-left: 1rem; /* Indent enhancement controls */
 }

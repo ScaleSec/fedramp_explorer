@@ -117,7 +117,7 @@
       <link>http://localhost:1313/low/au-12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/low/au-12/</guid>
-      <description>&lt;p&gt;Provide audit record generation capability for the event types the system is capable of auditing as defined in &lt;a href=&#34;#au-2_smt.a&#34;&gt;AU-2a&lt;/a&gt; on [all information system and network components where audit capability is deployed/available];&lt;/p&gt;&#xA;&lt;p&gt;Allow [Assignment: organization-defined personnel or roles allowed to select the event types that are to be logged by specific components of the system is/are defined;] to select the event types that are to be logged by specific components of the system; and&lt;/p&gt;</description>
+      <description>&lt;p&gt;Provide audit record generation capability for the event types the system is capable of auditing as defined in &lt;a href=&#34;../au-2/&#34;&gt;AU-2a&lt;/a&gt; on [all information system and network components where audit capability is deployed/available];&lt;/p&gt;&#xA;&lt;p&gt;Allow [Assignment: organization-defined personnel or roles allowed to select the event types that are to be logged by specific components of the system is/are defined;] to select the event types that are to be logged by specific components of the system; and&lt;/p&gt;</description>
     </item>
     <item>
       <title>Audit Record Retention</title>
@@ -260,6 +260,13 @@
       <description>&lt;p&gt;This control (AC-17.1) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-17/ac-17-1/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../au-2/&#34;&gt;← Back to AU-2&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Control AC-2.12 - Not Included</title>
+      <link>http://localhost:1313/low/ac-2.12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/ac-2.12/</guid>
+      <description>&lt;p&gt;This control (AC-2.12) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-2/ac-2-12&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Control AC-2.4 - Not Included</title>
       <link>http://localhost:1313/low/ac-2.4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -281,6 +288,13 @@
       <description>&lt;p&gt;This control (AC-3.10) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-3/ac-3-10/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../au-2/&#34;&gt;← Back to AU-2&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Control AC-6 - Not Included</title>
+      <link>http://localhost:1313/low/ac-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/ac-6/</guid>
+      <description>&lt;p&gt;This control (AC-6) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ac/ac-6&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Control AC-6.9 - Not Included</title>
       <link>http://localhost:1313/low/ac-6.9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -293,6 +307,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/low/ca-2/</guid>
       <description>&lt;p&gt;Select the appropriate assessor or assessment team for the type of assessment to be conducted;&lt;/p&gt;&#xA;&lt;p&gt;Develop a control assessment plan that describes the scope of the assessment including:&lt;/p&gt;&#xA;&lt;p&gt;Controls and control enhancements under assessment;&lt;/p&gt;&#xA;&lt;p&gt;Assessment procedures to be used to determine control effectiveness; and&lt;/p&gt;&#xA;&lt;p&gt;Assessment environment, assessment team, and assessment roles and responsibilities;&lt;/p&gt;&#xA;&lt;p&gt;Ensure the control assessment plan is reviewed and approved by the authorizing official or designated representative prior to conducting the assessment;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control AU-13 - Not Included</title>
+      <link>http://localhost:1313/low/au-13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/au-13/</guid>
+      <description>&lt;p&gt;This control (AU-13) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/au/au-13&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control AU-13.1 - Not Included</title>
@@ -330,11 +351,32 @@
       <description>&lt;p&gt;This control (CA-6.2) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ca/ca-6/ca-6-2/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../ca-3/&#34;&gt;← Back to CA-3&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Control CM-12 - Not Included</title>
+      <link>http://localhost:1313/low/cm-12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/cm-12/</guid>
+      <description>&lt;p&gt;This control (CM-12) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-12&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control CM-13 - Not Included</title>
+      <link>http://localhost:1313/low/cm-13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/cm-13/</guid>
+      <description>&lt;p&gt;This control (CM-13) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-13&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Control CM-2.2 - Not Included</title>
       <link>http://localhost:1313/low/cm-2.2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/low/cm-2.2/</guid>
       <description>&lt;p&gt;This control (CM-2.2) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-2/cm-2-2/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../cm-2/&#34;&gt;← Back to CM-2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control CM-3 - Not Included</title>
+      <link>http://localhost:1313/low/cm-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/cm-3/</guid>
+      <description>&lt;p&gt;This control (CM-3) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-3&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control CM-5.1 - Not Included</title>
@@ -365,6 +407,13 @@
       <description>&lt;p&gt;This control (CM-8.7) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-8/cm-8-7/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../cm-8/&#34;&gt;← Back to CM-8&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Control CM-9 - Not Included</title>
+      <link>http://localhost:1313/low/cm-9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/cm-9/</guid>
+      <description>&lt;p&gt;This control (CM-9) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-9&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Control CP-2.7 - Not Included</title>
       <link>http://localhost:1313/low/cp-2.7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -372,11 +421,25 @@
       <description>&lt;p&gt;This control (CP-2.7) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/cp/cp-2/cp-2-7/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../cp-2/&#34;&gt;← Back to CP-2&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Control IA-3.3 - Not Included</title>
+      <link>http://localhost:1313/low/ia-3.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/ia-3.3/</guid>
+      <description>&lt;p&gt;This control (IA-3.3) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ia/ia-3/ia-3-3&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Control IR-4.5 - Not Included</title>
       <link>http://localhost:1313/low/ir-4.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/low/ir-4.5/</guid>
       <description>&lt;p&gt;This control (IR-4.5) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ir/ir-4/ir-4-5/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../cp-2/&#34;&gt;← Back to CP-2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control MA-3 - Not Included</title>
+      <link>http://localhost:1313/low/ma-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/ma-3/</guid>
+      <description>&lt;p&gt;This control (MA-3) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ma/ma-3&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control MA-4.1 - Not Included</title>
@@ -391,6 +454,160 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/low/mp-4.2/</guid>
       <description>&lt;p&gt;This control (MP-4.2) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-4/mp-4-2/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../au-2/&#34;&gt;← Back to AU-2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control MP-5 - Not Included</title>
+      <link>http://localhost:1313/low/mp-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/mp-5/</guid>
+      <description>&lt;p&gt;This control (MP-5) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/mp/mp-5&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PE-17 - Not Included</title>
+      <link>http://localhost:1313/low/pe-17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pe-17/</guid>
+      <description>&lt;p&gt;This control (PE-17) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pe/pe-17&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PE-20 - Not Included</title>
+      <link>http://localhost:1313/low/pe-20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pe-20/</guid>
+      <description>&lt;p&gt;This control (PE-20) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pe/pe-20&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PL-7 - Not Included</title>
+      <link>http://localhost:1313/low/pl-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pl-7/</guid>
+      <description>&lt;p&gt;This control (PL-7) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pl/pl-7&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-18 - Not Included</title>
+      <link>http://localhost:1313/low/pm-18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-18/</guid>
+      <description>&lt;p&gt;This control (PM-18) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-18&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-21 - Not Included</title>
+      <link>http://localhost:1313/low/pm-21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-21/</guid>
+      <description>&lt;p&gt;This control (PM-21) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-21&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-23 - Not Included</title>
+      <link>http://localhost:1313/low/pm-23/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-23/</guid>
+      <description>&lt;p&gt;This control (PM-23) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-23&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-27 - Not Included</title>
+      <link>http://localhost:1313/low/pm-27/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-27/</guid>
+      <description>&lt;p&gt;This control (PM-27) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-27&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-28 - Not Included</title>
+      <link>http://localhost:1313/low/pm-28/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-28/</guid>
+      <description>&lt;p&gt;This control (PM-28) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-28&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-30 - Not Included</title>
+      <link>http://localhost:1313/low/pm-30/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-30/</guid>
+      <description>&lt;p&gt;This control (PM-30) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-30&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-31 - Not Included</title>
+      <link>http://localhost:1313/low/pm-31/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-31/</guid>
+      <description>&lt;p&gt;This control (PM-31) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-31&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-5 - Not Included</title>
+      <link>http://localhost:1313/low/pm-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-5/</guid>
+      <description>&lt;p&gt;This control (PM-5) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-5&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-6 - Not Included</title>
+      <link>http://localhost:1313/low/pm-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-6/</guid>
+      <description>&lt;p&gt;This control (PM-6) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-6&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-7 - Not Included</title>
+      <link>http://localhost:1313/low/pm-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-7/</guid>
+      <description>&lt;p&gt;This control (PM-7) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-7&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-8 - Not Included</title>
+      <link>http://localhost:1313/low/pm-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-8/</guid>
+      <description>&lt;p&gt;This control (PM-8) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-8&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PM-9 - Not Included</title>
+      <link>http://localhost:1313/low/pm-9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pm-9/</guid>
+      <description>&lt;p&gt;This control (PM-9) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pm/pm-9&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PT-2 - Not Included</title>
+      <link>http://localhost:1313/low/pt-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pt-2/</guid>
+      <description>&lt;p&gt;This control (PT-2) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pt/pt-2&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PT-3 - Not Included</title>
+      <link>http://localhost:1313/low/pt-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pt-3/</guid>
+      <description>&lt;p&gt;This control (PT-3) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pt/pt-3&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control PT-7 - Not Included</title>
+      <link>http://localhost:1313/low/pt-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/pt-7/</guid>
+      <description>&lt;p&gt;This control (PT-7) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/pt/pt-7&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control RA-8 - Not Included</title>
+      <link>http://localhost:1313/low/ra-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/ra-8/</guid>
+      <description>&lt;p&gt;This control (RA-8) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/ra/ra-8&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SA-10 - Not Included</title>
+      <link>http://localhost:1313/low/sa-10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sa-10/</guid>
+      <description>&lt;p&gt;This control (SA-10) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sa/sa-10&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SA-17 - Not Included</title>
+      <link>http://localhost:1313/low/sa-17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sa-17/</guid>
+      <description>&lt;p&gt;This control (SA-17) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sa/sa-17&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control SA-8.1 - Not Included</title>
@@ -449,11 +666,53 @@
       <description>&lt;p&gt;This control (SA-8.4) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sa/sa-8/sa-8-4/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../sa-8/&#34;&gt;← Back to SA-8&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Control SC-18 - Not Included</title>
+      <link>http://localhost:1313/low/sc-18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sc-18/</guid>
+      <description>&lt;p&gt;This control (SC-18) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-18&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SC-2 - Not Included</title>
+      <link>http://localhost:1313/low/sc-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sc-2/</guid>
+      <description>&lt;p&gt;This control (SC-2) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-2&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SC-3 - Not Included</title>
+      <link>http://localhost:1313/low/sc-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sc-3/</guid>
+      <description>&lt;p&gt;This control (SC-3) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-3&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SC-43 - Not Included</title>
+      <link>http://localhost:1313/low/sc-43/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sc-43/</guid>
+      <description>&lt;p&gt;This control (SC-43) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-43&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SC-5.3 - Not Included</title>
+      <link>http://localhost:1313/low/sc-5.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sc-5.3/</guid>
+      <description>&lt;p&gt;This control (SC-5.3) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-5/sc-5-3&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Control SC-7.15 - Not Included</title>
       <link>http://localhost:1313/low/sc-7.15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/low/sc-7.15/</guid>
       <description>&lt;p&gt;This control (SC-7.15) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-15/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../au-2/&#34;&gt;← Back to AU-2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SC-7.24 - Not Included</title>
+      <link>http://localhost:1313/low/sc-7.24/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sc-7.24/</guid>
+      <description>&lt;p&gt;This control (SC-7.24) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sc/sc-7/sc-7-24&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control SC-7.9 - Not Included</title>
@@ -503,6 +762,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/low/si-7.8/</guid>
       <description>&lt;p&gt;This control (SI-7.8) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/si/si-7/si-7-8/&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../au-2/&#34;&gt;← Back to AU-2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control SR-4 - Not Included</title>
+      <link>http://localhost:1313/low/sr-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/low/sr-4/</guid>
+      <description>&lt;p&gt;This control (SR-4) is not included in the LOW baseline.&lt;/p&gt;&#xA;&lt;p&gt;You can view this control&amp;rsquo;s details at &lt;a href=&#34;https://csf.tools/reference/nist-sp-800-53/r5/sr/sr-4&#34;&gt;CSF.tools&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../&#34;&gt;← Back to LOW Controls&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Controlled Maintenance</title>

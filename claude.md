@@ -1,0 +1,7 @@
+# Color palette
+
+#82CC26
+#4D4D4D
+#F4F4F4
+#004df2
+#DBDBDB

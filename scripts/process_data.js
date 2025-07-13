@@ -83,8 +83,25 @@ function convertMarkdownLinks(text, availableControls = new Set(), missingContro
     // and captures the link text (e.g., "AC-2") and the control ID (e.g., "ac-2", "ca-6.1").
     const controlLinkRegex = /\[([^\]]+)\]\(#([a-z]{2}-\d+(?:\.\d+|\(\d+\))?)\)/gi;
     
-    // The replacement function converts the link to a relative URL.
-    // e.g., from /high/ac-1/, a link to ac-2 becomes ../ac-2/
+    // This regex finds markdown links with _smt suffixes like [AC-2g](#ac-2_smt.g)
+    // and captures the link text and extracts the control ID part
+    const smtLinkRegex = /\[([^\]]+)\]\(#([a-z]{2}-\d+(?:\.\d+|\(\d+\))?)_smt\.[a-z0-9.]+\)/gi;
+    
+    // First, handle _smt links by converting them to control links
+    text = text.replace(smtLinkRegex, (match, linkText, controlId) => {
+        const normalizedControlId = controlId.toLowerCase();
+        
+        if (availableControls.has(normalizedControlId)) {
+            // Control exists, create normal link
+            return `[${linkText}](../${normalizedControlId}/)`;
+        } else {
+            // Control doesn't exist, but we'll create a redirect page for it
+            missingControls.add(normalizedControlId);
+            return `[${linkText}](../${normalizedControlId}/)`;
+        }
+    });
+    
+    // Then handle regular control links
     return text.replace(controlLinkRegex, (match, linkText, controlId) => {
         const normalizedControlId = controlId.toLowerCase();
         
@@ -321,8 +338,51 @@ enhancement: true` : ''}
         }
     });
 
+    // After processing all controls, scan for missing relative links
+    const allContentFiles = fs.readdirSync(path.join('content', baseline.toLowerCase()))
+        .filter(file => file.endsWith('.md'));
+    
+    const referencedControls = new Set();
+    const existingControls = new Set();
+    
+    // Collect all existing control IDs
+    allContentFiles.forEach(fileName => {
+        const controlId = fileName.replace('.md', '');
+        existingControls.add(controlId);
+    });
+    
+    // Scan all content files for relative control links
+    allContentFiles.forEach(fileName => {
+        const filePath = path.join('content', baseline.toLowerCase(), fileName);
+        const content = fs.readFileSync(filePath, 'utf8');
+        
+        // Find relative links like [PE-20](../pe-20/) or [SC-5(3)(b)](../sc-5.3/)
+        const relativeLinkRegex = /\[[^\]]+\]\(\.\.\/([a-z]{2}-\d+(?:\.\d+|\(\d+\))?)\//gi;
+        let match;
+        while ((match = relativeLinkRegex.exec(content)) !== null) {
+            const referencedControlId = match[1];
+            referencedControls.add(referencedControlId);
+        }
+    });
+    
+    // Find controls that are referenced but don't exist
+    const missingReferencedControls = new Set();
+    referencedControls.forEach(controlId => {
+        if (!existingControls.has(controlId)) {
+            missingReferencedControls.add(controlId);
+        }
+    });
+    
+    // Combine missing controls from both sources
+    const allMissingControls = new Set([...missingControls, ...missingReferencedControls]);
+    
+    // Log missing controls summary
+    if (allMissingControls.size > 0) {
+        console.log(`Created ${allMissingControls.size} redirect pages for missing controls in ${baseline} baseline`);
+    }
+
     // Create redirect pages for missing controls
-    missingControls.forEach(missingControlId => {
+    allMissingControls.forEach(missingControlId => {
         const contentDir = path.join('content', baseline.toLowerCase());
         const filePath = path.join(contentDir, `${missingControlId}.md`);
         
